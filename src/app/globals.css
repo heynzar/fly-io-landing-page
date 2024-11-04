@@ -1,0 +1,94 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.gradientbg {
+  background: radial-gradient(
+      at 41.90014313007223% 2.118056615193685%,
+      #f9a8d4 0px,
+      transparent 50%
+    ),
+    radial-gradient(
+      at 71.10272933696878% 2.5347232818603516%,
+      #7dd3fc 0px,
+      transparent 50%
+    ),
+    radial-gradient(
+      at 58.602729336968785% 2.743056615193685%,
+      #a5b4fc 0px,
+      transparent 50%
+    ),
+    radial-gradient(
+      at 28.430315543865337% 2.5347232818603516%,
+      #f7f3cc 0px,
+      transparent 50%
+    ),
+    #f6f5f5;
+}
+
+.bg {
+  background-image: url("../assets/headergr.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  -webkit-user-drag: none;
+  user-drag: none;
+}
+
+:root {
+  --background: #ffffff;
+  --foreground: #171717;
+  --primary: #281950;
+}
+
+body {
+  color: var(--foreground);
+  background: var(--background);
+  color: var(--primary);
+  font-family: var(--bricolage);
+}
+
+.mackinacPro {
+  font-family: var(--mackinacPro);
+}
+
+.btn-purple {
+  display: flex;
+  justify-items: center;
+  align-items: center;
+  gap: 4px;
+  background-color: #6d28d9;
+  background-image: linear-gradient(
+    to right bottom,
+    #a02be4,
+    #00000000,
+    #4f46e5
+  );
+  box-shadow: #4338ca40 0px 0px 0px 1px inset, #00000000 0px 0px 0px 0px;
+  color: #ffffff;
+  cursor: pointer;
+  padding: 12px 20px;
+  text-shadow: #5b21b640 0px 1px 3px;
+  transition: 0.2s ease;
+}
+
+.btn-purple:hover {
+  background-image: linear-gradient(
+    to bottom right,
+    #a02be4,
+    transparent,
+    #4138e7
+  );
+  gap: 10px;
+}
+
+.navbg {
+  backdrop-filter: blur(24px);
+  background-color: #ffffffbf;
+  background-image: linear-gradient(to right, #fbcfe866, #ddd6fe66, #c7d2fe66);
+  border: 0.740741px solid #ffffff80;
+  border-radius: 9999px;
+  box-shadow: #ffffff 0px 0px 0px 0px, #20223713 0px 0px 0px 1px,
+    #2022370d 0px 10px 15px -3px, #2022370d 0px 4px 6px -4px;
+}
