@@ -162,3 +162,17 @@ body {
   footer nav ul li:hover {
     color: #7C3AF0;
   }
+
+
+  @media (min-width: 480px) and (max-width: 639px) {
+   .card{
+    max-width: 448px;
+   }
+  }
+
+  
+  @media (min-width: 640px) and (max-width: 1023px) {
+    .card{
+     max-width: 720px;
+    }
+   }

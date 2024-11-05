@@ -1,16 +1,39 @@
 import Image from "next/image";
-import flyglobe from "../assets/fly-globe.png";
 import web from "../assets/web.svg";
 import connection from "../assets/connection.svg";
 import thunder from "../assets/thunder.svg";
 import spot from "../assets/spot.svg";
 import coolBird from "../assets/cool-bird.png";
 import { ChevronRight } from "lucide-react";
+import Card from "./Card";
+
+import flyglobe from "../assets/fly-globe.png";
+import jsLove from "../assets/js-love.png";
+
+const card1 = {
+  title: "Public Cloud Infrastructure. Modern Platform Endorphins.",
+  desc: "The most flexible and powerful compute platform on any public cloud. Fly Machines are hardware-virtualized containers, running on our own hardware, that launch instantly and run exactly as long as you want them to — for a single HTTP request, or for weeks of uptime.",
+  img: flyglobe,
+  alt: "Public Cloud Infrastructure illustration",
+  w: 348,
+  h: 350,
+  reverse: false,
+};
+
+const card2 = {
+  title: "Serverful JavaScript Without the Hassle of Serverless",
+  desc: "Imagine if a server could boot as fast as a serverless function? That's Fly Machines—serverless compute is a trade-off you no longer need to make. Graduate to a full-stack cloud to regain control over your stack & hosting bill.",
+  img: jsLove,
+  alt: "JavaScript illustration",
+  w: 448,
+  h: 277,
+  reverse: true,
+};
 
 function Features() {
   return (
     <section className="px-4 md:px-6 bg2 pt-24">
-      <div className="flex flex-col justify-between gap-4 items-center mt-24 lg:flex-row lg:px-14  ">
+      {/* <div className="flex flex-col justify-between gap-4 items-center mt-24 lg:flex-row lg:px-14  ">
         <div className="max-w-lg">
           <h2 className="mackinacPro text-2xl md:text-3xl">
             Public Cloud Infrastructure. Modern Platform Endorphins.
@@ -25,7 +48,17 @@ function Features() {
         <div className="flex justify-center items-center overflow-hidden">
           <Image src={flyglobe} alt="fly.io Global" className="max-w-sm" />
         </div>
-      </div>
+      </div> */}
+
+      <Card
+        reverse={card1.reverse}
+        title={card1.title}
+        desc={card1.desc}
+        img={card1.img}
+        alt={card1.alt}
+        w={card1.w}
+        h={card1.h}
+      />
 
       <div className="mt-24 flex flex-wrap justify-center items-center gap-16 max-w-screen-xl">
         <div className="flex gap-8 max-w-lg ">
@@ -110,6 +143,16 @@ function Features() {
           </button>
         </div>
       </div>
+
+      <Card
+        reverse={card2.reverse}
+        title={card2.title}
+        desc={card2.desc}
+        img={card2.img}
+        alt={card2.alt}
+        w={card2.w}
+        h={card2.h}
+      />
     </section>
   );
 }
