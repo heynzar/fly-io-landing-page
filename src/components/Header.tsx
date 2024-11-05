@@ -10,14 +10,28 @@ function Header() {
         <Image src={lg} alt="Fly.io Logo" width={111} height={36} />
       </div>
 
-      <ul className="hidden xl:flex gap-2 px-3 navbg  justify-center items-center py-2 text-sm ">
-        <li className="px-2 cursor-pointer">Articles</li>
-        <li className="px-2 cursor-pointer">Security</li>
-        <li className="px-2 cursor-pointer">Infra Log</li>
-        <li className="px-2 cursor-pointer">Docs</li>
-        <li className="px-2 cursor-pointer">Community</li>
-        <li className="px-2 cursor-pointer">Status</li>
-        <li className="px-2 cursor-pointer">Pricing</li>
+      <ul className="hidden xl:flex gap-2 px-3 navbg py-3 justify-center items-center text-sm font-medium">
+        <li className="cursor-pointer px-2 hover:text-[#7c3aed] trasition duration">
+          <span>Articles</span>
+        </li>
+        <li className="cursor-pointer  px-2 hover:text-[#7c3aed] transition-colors duration-150">
+          <span>Security</span>
+        </li>
+        <li className="cursor-pointer  px-2 hover:text-[#7c3aed] transition-colors duration-150">
+          <span>Infra Log</span>
+        </li>
+        <li className="cursor-pointer  px-2 hover:text-[#7c3aed] transition-colors duration-150">
+          <span> Docs</span>
+        </li>
+        <li className="cursor-pointer  px-2 hover:text-[#7c3aed] transition-colors duration-150">
+          <span>Community</span>
+        </li>
+        <li className="cursor-pointer  px-2 hover:text-[#7c3aed] transition-colors duration-150">
+          <span> Status</span>
+        </li>
+        <li className="cursor-pointer  px-2 hover:text-[#7c3aed] transition-colors duration-150">
+          <span>Pricing</span>
+        </li>
       </ul>
 
       <div className="flex gap-2 items-center">
@@ -26,10 +40,10 @@ function Header() {
         </div>
 
         <div className="hidden lg:flex gap-1 p-1 navbg rounded-full text-sm">
-          <button className="btn-purple !py-1 !px-3 rounded-r-md rounded-l-3xl">
+          <button className="btn-white !py-2 !px-3 rounded-r-lg rounded-l-3xl">
             Sign In
           </button>
-          <button className="btn-purple !py-1 !px-3 rounded-l-md rounded-r-3xl">
+          <button className="btn-purple !py-2 !px-3 rounded-l-lg rounded-r-3xl">
             Get Strated
           </button>
         </div>
