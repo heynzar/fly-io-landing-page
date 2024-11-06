@@ -33,7 +33,7 @@ const card3 = {
 
 function Section2() {
   return (
-    <section className="py-32 bg-red-100">
+    <section className="py-32 bg2">
       <Card
         reverse={card2.reverse}
         title={card2.title}

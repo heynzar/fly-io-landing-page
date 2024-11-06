@@ -2,6 +2,16 @@ import betterTogether from "../assets/better-together.png";
 import { ChevronRight } from "lucide-react";
 import Image from "next/image";
 
+import phoenix from "@/assets/phoenix.svg";
+import remix from "@/assets/remix.svg";
+import nextjs from "@/assets/nextjs.svg";
+import rails from "@/assets/rails.svg";
+import django from "@/assets/django.svg";
+import docker from "@/assets/docker.svg";
+import go from "@/assets/go.svg";
+import rust from "@/assets/rust.svg";
+import laravel from "@/assets/laravel.svg";
+
 function Tech() {
   return (
     <section className="purple-bg">
@@ -14,38 +24,74 @@ function Tech() {
             Rails, Phoenix, Django, Node, Laravel, and .NET.
           </p>
 
-          <button className="btn-glass rounded-full">
+          <button className="btn-glass-primary rounded-full">
             <p className="font-semibold">Learn More</p>
             <ChevronRight className="size-4 text-white/75" />
           </button>
         </div>
-        <div className="mt-5 flex flex-wrap justify-center items-center gap-4 card">
+        <div className="mt-5 flex flex-wrap justify-center items-center gap-5 card">
           <button className="btn-glass ff rounded-2xl !px-4 !py-8 ">
-            <p className="font-semibold">Laravel</p>
+            <Image
+              src={phoenix}
+              alt="phoenix Logo"
+              className="brightness-0 invert h-7 w-min mx-aut"
+            />
           </button>
           <button className="btn-glass ff rounded-2xl !px-4 !py-8 ">
-            <p className="font-semibold">Laravel</p>
+            <Image
+              src={remix}
+              alt="phoenix Logo"
+              className="brightness-0 invert h-7 w-min mx-auto"
+            />
           </button>
           <button className="btn-glass ff rounded-2xl !px-4 !py-8 ">
-            <p className="font-semibold">Laravel</p>
+            <Image
+              src={rails}
+              alt="phoenix Logo"
+              className="brightness-0 invert h-7 w-min mx-auto"
+            />
           </button>
           <button className="btn-glass ff rounded-2xl !px-4 !py-8 ">
-            <p className="font-semibold">Laravel</p>
+            <Image
+              src={docker}
+              alt="phoenix Logo"
+              className="brightness-0 invert h-7 w-min mx-auto"
+            />
           </button>
           <button className="btn-glass ff rounded-2xl !px-4 !py-8 ">
-            <p className="font-semibold">Laravel</p>
+            <Image
+              src={go}
+              alt="phoenix Logo"
+              className="brightness-0 invert h-7 w-min mx-auto"
+            />
           </button>
           <button className="btn-glass ff rounded-2xl !px-4 !py-8 ">
-            <p className="font-semibold">Laravel</p>
+            <Image
+              src={rust}
+              alt="phoenix Logo"
+              className="brightness-0 invert h-7 w-min mx-auto"
+            />
           </button>
           <button className="btn-glass ff rounded-2xl !px-4 !py-8 ">
-            <p className="font-semibold">Laravel</p>
+            <Image
+              src={django}
+              alt="phoenix Logo"
+              className="brightness-0 invert h-7 w-min mx-auto"
+            />
           </button>
           <button className="btn-glass ff rounded-2xl !px-4 !py-8 ">
-            <p className="font-semibold">Laravel</p>
+            <Image
+              src={laravel}
+              alt="phoenix Logo"
+              className="brightness-0 invert h-7 w-min mx-auto"
+            />
           </button>
           <button className="btn-glass ff rounded-2xl !px-4 !py-8 ">
-            <p className="font-semibold">Laravel</p>
+            <Image
+              src={nextjs}
+              alt="phoenix Logo"
+              className="brightness-0 invert h-7 w-min mx-auto"
+            />
           </button>
         </div>
       </div>

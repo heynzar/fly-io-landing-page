@@ -42,9 +42,9 @@ const card5 = {
   btn: "Enterprise Features",
 };
 
-function Features() {
+function Section1() {
   return (
-    <section className="flex flex-col justify-center items-center gap-8 lg:gap-24 px-4 md:px-6 bg2 pt-24">
+    <section className="bg2 py-32 flex flex-col justify-center items-center gap-32 px-4 md:px-6">
       <Card
         reverse={card1.reverse}
         title={card1.title}
@@ -55,7 +55,7 @@ function Features() {
         h={card1.h}
         btn={card1.btn}
       />
-      <div className="mt-24 flex flex-wrap justify-center items-center gap-16 max-w-screen-xl">
+      <div className="flex flex-wrap -mt-12 justify-center items-center gap-16 max-w-[1136px]">
         <div className="flex gap-8 max-w-lg ">
           <div className="icon icon-green">
             <Image src={web} alt="web4site icon" className="size-6 " />
@@ -141,7 +141,7 @@ function Features() {
   );
 }
 
-export default Features;
+export default Section1;
 
 {
   /* <div className="w-[80%] mx-auto ">

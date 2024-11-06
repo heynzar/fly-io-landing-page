@@ -45,28 +45,40 @@ body {
   transition: 0.2s ease;
 }
 
-.btn-glass {
+.btn-glass,.btn-glass-primary {
 	display: inline-flex;
   justify-items: center;
   align-items: center;
 	background-clip: padding-box;
 	background-color: #FFFFFF1A;
-	background-image: linear-gradient(to right bottom, #FFFFFF13, #FFFFFF13, #FFFFFF33);
-	border: 0.666667px solid #FFFFFF59;
+	background-image: linear-gradient(to right bottom, rgba(255, 255, 255, 0.075), rgba(255, 255, 255, 0.075), rgba(255, 255, 255, 0.1));
+	border: 0.7px solid #FFFFFF59;
 	box-shadow: #00000000 0px 0px 0px 0px, #5B21B626 0px 7px 7px -4px, #5B21B626 0px 2px 4px -2px;
 	color: #FFFFFF;
 	cursor: pointer;
 	gap: 4px;
   padding: 12px 20px;
-  transition: 0.2s ease;	
+  transition: 0.3s ease;	
 }
 
 .btn-glass:hover {
+  transform: scale(105%);
+  background-color: rgba(255, 255, 255, 0.2);
+
+}
+
+.btn-glass-primary:hover{
+  background-color: rgba(255, 255, 255, 0.2);
   gap: 10px;
 }
 
 .ff{
   flex: 1 0 30%;
+  transition: transform 0.2s ease;
+}
+
+.ff:hover{
+  transform: scale(1.05);
 }
 
 .gradientbg {
