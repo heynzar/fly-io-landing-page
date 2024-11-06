@@ -1,3 +1,4 @@
+import { ChevronRight } from "lucide-react";
 import Image, { StaticImageData } from "next/image";
 import { twMerge } from "tailwind-merge";
 
@@ -9,6 +10,7 @@ function Card({
   w,
   h,
   reverse,
+  btn,
 }: {
   title: string;
   desc: string;
@@ -17,11 +19,12 @@ function Card({
   w: number;
   h: number;
   reverse: boolean;
+  btn: string;
 }) {
   return (
     <div
       className={twMerge(
-        "px-4 flex justify-center items-center  lg:gap-16 xl:gap-20 rounded-xl ",
+        "px-4 flex justify-center items-center lg:gap-16 xl:gap-20 rounded-x",
         reverse
           ? "flex-col-reverse lg:flex-row-reverse"
           : "flex-col lg:flex-row"
@@ -33,10 +36,15 @@ function Card({
           reverse ? "mt-20" : ""
         )}
       >
-        <h2 className="mackinacPro mb-4 font-heading text-2xl md:text-3xl lg:text-4xl tracking-tight">
-          {title}
-        </h2>
-        <p className="text-lg text-[#281950]">{desc}</p>
+        <h2 className="h2">{title}</h2>
+        <p className="text-lg text-primary/75">{desc}</p>
+
+        {btn && (
+          <button className="btn-purple rounded-full">
+            <p className="font-semibold">{btn}</p>
+            <ChevronRight className="size-4 text-white/75" />
+          </button>
+        )}
       </div>
       <div>
         <Image

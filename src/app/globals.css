@@ -2,59 +2,20 @@
 @tailwind components;
 @tailwind utilities;
 
-.gradientbg {
-  background: radial-gradient(
-      at 41.90014313007223% 2.118056615193685%,
-      #f9a8d4 0px,
-      transparent 50%
-    ),
-    radial-gradient(
-      at 71.10272933696878% 2.5347232818603516%,
-      #7dd3fc 0px,
-      transparent 50%
-    ),
-    radial-gradient(
-      at 58.602729336968785% 2.743056615193685%,
-      #a5b4fc 0px,
-      transparent 50%
-    ),
-    radial-gradient(
-      at 28.430315543865337% 2.5347232818603516%,
-      #f7f3cc 0px,
-      transparent 50%
-    ),
-    #f6f5f5;
+
+@layer components{
+   .h2 {
+    @apply mackinacPro mb-4 text-2xl md:text-3xl lg:text-4xl tracking-tight;
+  }
 }
-
-.bg {
-  background-image: url("../assets/bg-header.svg");
-  background-repeat: no-repeat;
- background-size: contain;
-  -webkit-user-drag: none;
-  user-drag: none;
-}
-
-.bg2 {
-  background-image: url("../assets/headergr.png");
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-  -webkit-user-drag: none;
-  user-drag: none;
-}
-
-
-
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --background: #F4F5FA;
   --primary: #281950
   --hover : #7c3aed
 }
 
 body {
-  color: var(--foreground);
   background: #F4F5FA;
   color: #281950  ;
   font-family: var(--bricolage);
@@ -82,6 +43,82 @@ body {
   padding: 12px 20px;
   text-shadow: #5b21b640 0px 1px 3px;
   transition: 0.2s ease;
+}
+
+.btn-glass {
+	display: inline-flex;
+  justify-items: center;
+  align-items: center;
+	background-clip: padding-box;
+	background-color: #FFFFFF1A;
+	background-image: linear-gradient(to right bottom, #FFFFFF13, #FFFFFF13, #FFFFFF33);
+	border: 0.666667px solid #FFFFFF59;
+	box-shadow: #00000000 0px 0px 0px 0px, #5B21B626 0px 7px 7px -4px, #5B21B626 0px 2px 4px -2px;
+	color: #FFFFFF;
+	cursor: pointer;
+	gap: 4px;
+  padding: 12px 20px;
+  transition: 0.2s ease;	
+}
+
+.btn-glass:hover {
+  gap: 10px;
+}
+
+.ff{
+  flex: 1 0 30%;
+}
+
+.gradientbg {
+  background: radial-gradient(
+      at 41.90014313007223% 2.118056615193685%,
+      #f9a8d4 0px,
+      transparent 50%
+    ),
+    radial-gradient(
+      at 71.10272933696878% 2.5347232818603516%,
+      #7dd3fc 0px,
+      transparent 50%
+    ),
+    radial-gradient(
+      at 58.602729336968785% 2.743056615193685%,
+      #a5b4fc 0px,
+      transparent 50%
+    ),
+    radial-gradient(
+      at 28.430315543865337% 2.5347232818603516%,
+      #f7f3cc 0px,
+      transparent 50%
+    ),
+    #f6f5f5;
+}
+
+
+
+.bg {
+  background-image: url("../assets/bg-header.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  -webkit-user-drag: none;
+  user-drag: none;
+}
+
+.bg2 {
+  background-image: url("../assets/headergr.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  -webkit-user-drag: none;
+  user-drag: none;
+}
+
+.bg3 {
+  background-image: url("../assets/lines.svg");
+  /* background-repeat: repeat;
+  background-size:contain;
+  -webkit-user-drag: none;
+  user-drag: none; */
+  mask-image: radial-gradient(125% 100%, rgba(255, 255, 255, .025) 25%, rgba(255, 255, 255, 1))
 }
 
 .btn-purple:hover {
@@ -150,7 +187,6 @@ body {
     border-radius: 24px;
     box-shadow: #FFFFFF 0px 0px 0px 0px inset, #4C1D951A 0px 0px 0px 1px inset, #00000000 0px 0px 0px 0px;
     box-sizing: border-box;
-    padding: 0px 40px;
   }
   
   footer nav ul li {
@@ -176,3 +212,13 @@ body {
      max-width: 720px;
     }
    }
+
+   .purple-bg {
+    background-color: #8B5CF6;
+    background-image: linear-gradient(to right bottom, #A02BE4, #7C3AED, #4F46E5);
+    box-sizing: border-box;
+    overflow: hidden;
+    padding: 128px 0px;
+    position: relative;
+  }
+  
