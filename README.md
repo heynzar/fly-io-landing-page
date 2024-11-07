@@ -70,9 +70,7 @@ This project is licensed under the MIT License. Feel free to use and modify it f
 
 For any questions or feedback, feel free to reach out:
 
-- **Email**: your-email@example.com
-- **Twitter**: your-username
-- **Linkedin**: @your-handle
+- **Email**: heynzar@gmail.com
 
 ---
 
@@ -112,5 +110,5 @@ git commit -m "Add description of changes"
 git push origin feature-name
 ```
 
-1. Create a Pull Request :
+7. Create a Pull Request :
    Go to the original repository and create a Pull Request describing your changes.
