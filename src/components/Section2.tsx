@@ -9,7 +9,7 @@ import betterTogether from "../assets/better-together.png";
 import jsLove from "../assets/js-love.png";
 import Image from "next/image";
 
-const card2 = {
+const card3 = {
   title: "Serverful JavaScript Without the Hassle of Serverless",
   desc: "Imagine if a server could boot as fast as a serverless function? That's Fly Machines—serverless compute is a trade-off you no longer need to make. Graduate to a full-stack cloud to regain control over your stack & hosting bill.",
   img: jsLove,
@@ -20,7 +20,7 @@ const card2 = {
   btn: "",
 };
 
-const card3 = {
+const card4 = {
   title: "Developer-Focused Public Cloud",
   desc: "Help us build the next public cloud. No, seriously. Is your product something devs can take advantage of to ship better apps? Work with us.",
   img: betterTogether,
@@ -35,16 +35,15 @@ function Section2() {
   return (
     <section className="py-32 bg2">
       <Card
-        reverse={card2.reverse}
-        title={card2.title}
-        desc={card2.desc}
-        img={card2.img}
-        alt={card2.alt}
-        w={card2.w}
-        h={card2.h}
-        btn={card2.btn}
+        reverse={card3.reverse}
+        title={card3.title}
+        desc={card3.desc}
+        img={card3.img}
+        alt={card3.alt}
+        w={card3.w}
+        h={card3.h}
+        btn={card3.btn}
       />
-
       <div className="mt-6 mb-32 flex flex-wrap justify-center items-center gap-16 max-w-screen-xl">
         <div className="flex flex-col gap-8 max-w-lg lg:max-w-72 ">
           <div className="icon icon-green">
@@ -92,18 +91,17 @@ function Section2() {
           </div>
         </div>
       </div>
-
       <Tech />
       <section className="mt-32">
         <Card
-          reverse={card3.reverse}
-          title={card3.title}
-          desc={card3.desc}
-          img={card3.img}
-          alt={card3.alt}
-          w={card3.w}
-          h={card3.h}
-          btn={card3.btn}
+          reverse={card4.reverse}
+          title={card4.title}
+          desc={card4.desc}
+          img={card4.img}
+          alt={card4.alt}
+          w={card4.w}
+          h={card4.h}
+          btn={card4.btn}
         />
       </section>
     </section>

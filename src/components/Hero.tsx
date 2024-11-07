@@ -23,7 +23,7 @@ function Hero() {
           </p>
 
           <button className="btn-purple mt-9 md:mx-auto rounded-full">
-            <p className="font-semibold">Deploy Your App in 5 minutes</p>
+            <p className="font-medium">Deploy Your App in 5 minutes</p>
             <ChevronRight className="size-4 text-white/75" />
           </button>
         </div>

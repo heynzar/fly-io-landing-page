@@ -41,7 +41,7 @@ function Card({
 
         {btn && (
           <button className="btn-purple rounded-full">
-            <p className="font-semibold">{btn}</p>
+            <p className="font-medium">{btn}</p>
             <ChevronRight className="size-4 text-white/75" />
           </button>
         )}

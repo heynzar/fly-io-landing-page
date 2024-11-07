@@ -1,4 +1,3 @@
-import betterTogether from "../assets/better-together.png";
 import { ChevronRight } from "lucide-react";
 import Image from "next/image";
 
@@ -25,7 +24,7 @@ function Tech() {
           </p>
 
           <button className="btn-glass-primary rounded-full">
-            <p className="font-semibold">Learn More</p>
+            <p className="font-medium">Learn More</p>
             <ChevronRight className="size-4 text-white/75" />
           </button>
         </div>

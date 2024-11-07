@@ -1,4 +1,4 @@
-
-[] Add Header > nav > dropdown
-[] fix Enterprise-Ready Section
-[] improve Css
+[X] Fav icon
+[X] Add Header > nav > dropdown
+[X] fix Enterprise-Ready Section
+[X] improve Css

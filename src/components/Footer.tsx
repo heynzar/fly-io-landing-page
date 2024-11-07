@@ -19,50 +19,50 @@ function Footer() {
             <p className="uppercase font-semibold mb-3 text-xs text-white">
               Comapany
             </p>
-            <li className="text-sm">About</li>
-            <li className="text-sm">Pricing</li>
-            <li className="text-sm">Jobs</li>
+            <li className="text-sm footer-link">About</li>
+            <li className="text-sm footer-link">Pricing</li>
+            <li className="text-sm footer-link">Jobs</li>
           </ul>
 
           <ul className="min-w-28">
             <p className="uppercase font-semibold mb-3 text-xs text-white">
               Articles
             </p>
-            <li className="text-sm">Blog</li>
-            <li className="text-sm">Phoenix Files</li>
-            <li className="text-sm">Laravel Bytes</li>
-            <li className="text-sm">Ruby Dispatch</li>
-            <li className="text-sm">Django Beats</li>
-            <li className="text-sm">JavaScript Journal</li>
+            <li className="text-sm footer-link">Blog</li>
+            <li className="text-sm footer-link">Phoenix Files</li>
+            <li className="text-sm footer-link">Laravel Bytes</li>
+            <li className="text-sm footer-link">Ruby Dispatch</li>
+            <li className="text-sm footer-link">Django Beats</li>
+            <li className="text-sm footer-link">JavaScript Journal</li>
           </ul>
 
           <ul className="min-w-28">
             <p className="uppercase font-semibold mb-3 text-xs text-white">
               Resources
             </p>
-            <li className="text-sm">Docs</li>
-            <li className="text-sm">Customers</li>
-            <li className="text-sm">Support</li>
-            <li className="text-sm">Support Metrics</li>
-            <li className="text-sm">Status</li>
+            <li className="text-sm footer-link">Docs</li>
+            <li className="text-sm footer-link">Customers</li>
+            <li className="text-sm footer-link">Support</li>
+            <li className="text-sm footer-link">Support Metrics</li>
+            <li className="text-sm footer-link">Status</li>
           </ul>
 
           <ul className="min-w-28">
             <p className="uppercase font-semibold mb-3 text-xs text-white">
               Contact
             </p>
-            <li className="text-sm">Github</li>
-            <li className="text-sm">X (Twitter)</li>
-            <li className="text-sm">Community</li>
+            <li className="text-sm footer-link">Github</li>
+            <li className="text-sm footer-link">X (Twitter)</li>
+            <li className="text-sm footer-link">Community</li>
           </ul>
 
           <ul className="min-w-28">
             <p className="uppercase font-semibold mb-3 text-xs text-white">
               Legal
             </p>
-            <li className="text-sm">Security</li>
-            <li className="text-sm">Privacy policy</li>
-            <li className="text-sm">Terms of service</li>
+            <li className="text-sm footer-link">Security</li>
+            <li className="text-sm footer-link">Privacy policy</li>
+            <li className="text-sm footer-link">Terms of service</li>
           </ul>
         </nav>
       </div>

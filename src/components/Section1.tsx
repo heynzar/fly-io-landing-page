@@ -7,7 +7,7 @@ import Card from "./Card";
 
 import flyglobe from "../assets/fly-globe.png";
 import coolBird from "../assets/cool-bird.png";
-import enterprise from "@/assets/enterprise.png";
+import Enterprise from "./Enterprise";
 
 const card1 = {
   title: "Public Cloud Infrastructure. Modern Platform Endorphins.",
@@ -20,7 +20,7 @@ const card1 = {
   btn: "",
 };
 
-const card4 = {
+const card2 = {
   title: "Support By Developers For Developers",
   desc: "Paid support packages include a team of actual engineers (not chatbots) who themselves ship code on our platform. Emergency support and guaranteed response times available.",
   img: coolBird,
@@ -29,17 +29,6 @@ const card4 = {
   h: 323,
   reverse: false,
   btn: "Learn More",
-};
-
-const card5 = {
-  title: "Enterprise-Ready",
-  desc: "Apps running on Fly Machines are KVM hardware-isolated, built on a memory-safe stack and running directly on our own metal.",
-  img: enterprise,
-  alt: "Enterprise Features",
-  w: 528,
-  h: 343,
-  reverse: true,
-  btn: "Enterprise Features",
 };
 
 function Section1() {
@@ -114,29 +103,19 @@ function Section1() {
         </div>
       </div>
 
-      <div className="cool-bird p-10">
+      <div className="cool-bird-bg p-10">
         <Card
-          reverse={card4.reverse}
-          title={card4.title}
-          desc={card4.desc}
-          img={card4.img}
-          alt={card4.alt}
-          w={card4.w}
-          h={card4.h}
-          btn={card4.btn}
+          reverse={card2.reverse}
+          title={card2.title}
+          desc={card2.desc}
+          img={card2.img}
+          alt={card2.alt}
+          w={card2.w}
+          h={card2.h}
+          btn={card2.btn}
         />
       </div>
-
-      <Card
-        reverse={card5.reverse}
-        title={card5.title}
-        desc={card5.desc}
-        img={card5.img}
-        alt={card5.alt}
-        w={card5.w}
-        h={card5.h}
-        btn={card5.btn}
-      />
+      <Enterprise />
     </section>
   );
 }
