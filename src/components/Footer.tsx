@@ -69,7 +69,10 @@ function Footer() {
 
       <div>
         <p className="text-xs">
-          Copyright © {new Date().getFullYear()} nzar.io
+          Copyright © {new Date().getFullYear()}
+          <a target="_blank" href="https://nzar.dev" className="underline ml-1">
+            nzar.dev
+          </a>
         </p>
       </div>
     </footer>
