@@ -13,7 +13,7 @@ function Hero() {
             A Public Cloud Built For Developers Who Ship
           </h1>
           <p className="mt-4 text-base lg:text-lg md:w-[510px] md:mx-auto lg:min-w-[672px]">
-            <strong> Over 3 million apps</strong>
+            <span className="font-semibold"> Over 3 million apps</span>
             <span className="text-[#281950]/75 ml-2">
               have launched on Fly.io, leveraging global Anycast load-balancing,
               zero-config private networking, hardware isolation, and instant

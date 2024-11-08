@@ -1,7 +1,6 @@
 import type { Metadata } from "next";
 import localFont from "next/font/local";
 import { Bricolage_Grotesque } from "next/font/google";
-
 import "./globals.css";
 
 const mackinacPro = localFont({
@@ -12,13 +11,24 @@ const mackinacPro = localFont({
 const bricolage = Bricolage_Grotesque({
   subsets: ["latin"],
   variable: "--bricolage",
-  weight: ["200", "300", "400", "500", "600", "700", "800"],
+  weight: ["400", "500", "600"],
 });
 
 export const metadata: Metadata = {
-  title: "NZAR - Fly.io Clone",
+  title: "NZAR - Fly.io Landing Page Clone",
   description:
-    "Fly.io Landing Page Clone Using Next.js TailwindCss and TypeScript",
+    "Explore a high-quality Fly.io landing page clone built with Next.js, TailwindCSS, and TypeScript. Experience fast loading, responsive design, and streamlined code inspired by Fly.io's web interface.",
+  keywords: [
+    "Fly.io clone",
+    "Next.js project",
+    "TailwindCSS design",
+    "TypeScript web app",
+    "landing page clone",
+    "responsive design",
+    "frontend development",
+  ],
+  viewport: "width=device-width, initial-scale=1",
+  robots: "index, follow",
 };
 
 export default function RootLayout({
