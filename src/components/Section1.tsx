@@ -121,28 +121,3 @@ function Section1() {
 }
 
 export default Section1;
-
-{
-  /* <div className="w-[80%] mx-auto ">
-          <Image
-            src={coolBird}
-            alt="cool bird illustraion"
-            className="w-full mx-auto lg:mt-6"
-          />
-        </div>
-
-        <div className="my-8 flex flex-col gap-4 lg:my-16">
-          <h3 className="mackinacPro text-2xl lg:text-3xl ">
-            Support By Developers For Developers
-          </h3>
-          <p className="text-lg opacity-75">
-            Paid support packages include a team of actual engineers (not
-            chatbots) who themselves ship code on our platform. Emergency
-            support and guaranteed response times available.
-          </p>
-          <button className="btn-purple rounded-full justify-center md:max-w-min">
-            <p className="text-nowrap">Learn More</p>
-            <ChevronRight className="size-4 text-white/75" />
-          </button>
-        </div> */
-}

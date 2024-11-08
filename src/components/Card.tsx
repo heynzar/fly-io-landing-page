@@ -52,7 +52,7 @@ function Card({
           height={h}
           alt={alt}
           src={img}
-          className="w-full max-w-sm -mb-12 mx-auto relative lg:-mt-4"
+          className="w-full max-w-sm  mt-5 -mb-12 mx-auto relative lg:-mt-4"
         />
       </div>
     </div>

@@ -44,7 +44,7 @@ function Section2() {
         h={card3.h}
         btn={card3.btn}
       />
-      <div className="mt-6 mb-32 flex flex-wrap justify-center items-center gap-16 max-w-screen-xl">
+      <div className="px-4 md:px-6 mt-6 mb-32 flex flex-wrap justify-center items-center gap-16 max-w-screen-xl">
         <div className="flex flex-col gap-8 max-w-lg lg:max-w-72 ">
           <div className="icon icon-green">
             <Image src={web} alt="web4site icon" className="size-6 " />

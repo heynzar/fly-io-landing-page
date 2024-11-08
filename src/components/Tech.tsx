@@ -28,67 +28,67 @@ function Tech() {
             <ChevronRight className="size-4 text-white/75" />
           </button>
         </div>
-        <div className="mt-5 flex flex-wrap justify-center items-center gap-5 card">
+        <div className="mt-10 flex flex-wrap justify-center items-center gap-5 card">
           <button className="btn-glass ff rounded-2xl !px-4 !py-8 ">
             <Image
               src={phoenix}
               alt="phoenix Logo"
-              className="brightness-0 invert h-7 w-min mx-aut"
+              className="brightness-0 invert h-7 w-min mx-auto"
             />
           </button>
           <button className="btn-glass ff rounded-2xl !px-4 !py-8 ">
             <Image
               src={remix}
-              alt="phoenix Logo"
+              alt="remix Logo"
               className="brightness-0 invert h-7 w-min mx-auto"
             />
           </button>
           <button className="btn-glass ff rounded-2xl !px-4 !py-8 ">
             <Image
               src={rails}
-              alt="phoenix Logo"
+              alt="rails Logo"
               className="brightness-0 invert h-7 w-min mx-auto"
             />
           </button>
           <button className="btn-glass ff rounded-2xl !px-4 !py-8 ">
             <Image
               src={docker}
-              alt="phoenix Logo"
+              alt="docker Logo"
               className="brightness-0 invert h-7 w-min mx-auto"
             />
           </button>
           <button className="btn-glass ff rounded-2xl !px-4 !py-8 ">
             <Image
               src={go}
-              alt="phoenix Logo"
+              alt="go Logo"
               className="brightness-0 invert h-7 w-min mx-auto"
             />
           </button>
           <button className="btn-glass ff rounded-2xl !px-4 !py-8 ">
             <Image
               src={rust}
-              alt="phoenix Logo"
+              alt="rust Logo"
               className="brightness-0 invert h-7 w-min mx-auto"
             />
           </button>
           <button className="btn-glass ff rounded-2xl !px-4 !py-8 ">
             <Image
               src={django}
-              alt="phoenix Logo"
+              alt="django Logo"
               className="brightness-0 invert h-7 w-min mx-auto"
             />
           </button>
           <button className="btn-glass ff rounded-2xl !px-4 !py-8 ">
             <Image
               src={laravel}
-              alt="phoenix Logo"
+              alt="laravel Logo"
               className="brightness-0 invert h-7 w-min mx-auto"
             />
           </button>
           <button className="btn-glass ff rounded-2xl !px-4 !py-8 ">
             <Image
               src={nextjs}
-              alt="phoenix Logo"
+              alt="nextjs Logo"
               className="brightness-0 invert h-7 w-min mx-auto"
             />
           </button>

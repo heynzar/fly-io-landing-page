@@ -17,7 +17,8 @@ const bricolage = Bricolage_Grotesque({
 
 export const metadata: Metadata = {
   title: "NZAR - Fly.io Clone",
-  description: "Fly.io Clone Using Next.js TailwindCss and TypeScript",
+  description:
+    "Fly.io Landing Page Clone Using Next.js TailwindCss and TypeScript",
 };
 
 export default function RootLayout({
