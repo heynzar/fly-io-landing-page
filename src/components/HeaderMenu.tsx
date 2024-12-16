@@ -8,8 +8,6 @@ export default function HeaderMenu() {
     "Blog",
     "Phoenix Files",
     "Laravel Bytes",
-    "Ruby Dispatch",
-    "Django Beats",
     "JavaScript Journal",
     "Security",
     "Infra Log",
@@ -21,7 +19,7 @@ export default function HeaderMenu() {
   return (
     <>
       <button
-        className="xl:hidden z-10"
+        className={`xl:hidden z-10 ${isOpen && "bg-white rounded-full p-2"}`}
         onClick={() => {
           setIsOpen(!isOpen);
         }}
@@ -29,13 +27,29 @@ export default function HeaderMenu() {
         {isOpen ? <X className="size-6" /> : <Menu className="size-6" />}
       </button>
 
-      <nav className="h-screen p-4 pt-28 flex flex-col gap-4 absolute inset-0 bg-white z-0">
-        {nav.map((link) => (
-          <a key={`${link.toLowerCase()}`} href={`#${link.toLowerCase()}`}>
-            {link}
-          </a>
-        ))}
-      </nav>
+      <section
+        className={`${
+          !isOpen ? "backdrop-blur-0" : "backdrop-blur-sm"
+        }  h-screen flex flex-col gap-4 absolute inset-0 z-0`}
+      >
+        <nav
+          className={`${
+            !isOpen && "-translate-x-[100%]"
+          } md:max-w-96 w-full h-full p-4 lg:p-10 lg:pt-28 pt-28 flex flex-col transition-transform duration-500 gap-4 bg-white`}
+        >
+          {nav.map((link) => (
+            <a key={`${link.toLowerCase()}`} href={`#${link.toLowerCase()}`}>
+              {link}
+            </a>
+          ))}
+          <button className="lg:hidden text-[#7c3aed] bg-white hover:bg-[#7c3aed]/60 transition-colors shadow py-3 w-36 rounded-lg border border-[#7c3aed]/20">
+            Sign In
+          </button>
+          <button className="lg:hidden bg-[#7c3aed] text-white py-3 w-36 rounded-lg">
+            Get Started
+          </button>
+        </nav>
+      </section>
     </>
   );
 }
