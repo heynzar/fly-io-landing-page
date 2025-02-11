@@ -1,7 +1,6 @@
 import Image from "next/image";
 import lg from "@/assets/logo-landscape.png";
 
-import { Menu } from "lucide-react";
 import Nav from "./Nav";
 import HeaderMenu from "./HeaderMenu";
 
